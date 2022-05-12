@@ -24,7 +24,7 @@ app.get('/recipes/:ingredient', function (request, res) {
         
         recipes=data.results.map(recipe => {
             return {
-                ingredients:recipe.ingredients,
+                ingredients:recipe.ingredients.map(r=>{return{text:r}}),
                 title:recipe.title, 
                 thumbnail:recipe.thumbnail,
                 href:recipe.href
