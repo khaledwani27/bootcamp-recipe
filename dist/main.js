@@ -14,7 +14,7 @@ $("button").on("click", function () {
 
 $(".result_container").on("click","img", function () {
     console.log("hi");
-    let relevantItem = $(this).closest("div").find("ul:nth-child(1)").text()
+    let relevantItem = $(this).closest("div").find("ul.container_search > li:nth-child(1)").text()
     alert(relevantItem)
 })
 
