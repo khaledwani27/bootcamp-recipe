@@ -12,6 +12,11 @@ $("button").on("click", function () {
     search.val("")
 })
 
+$(".result_container").on("click","img", function () {
+    console.log("hi");
+    let relevantItem = $(this).closest("div").find("ul:nth-child(1)").text()
+    alert(relevantItem)
+})
 
 
 
