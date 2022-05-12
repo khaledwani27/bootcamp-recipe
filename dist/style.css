@@ -31,7 +31,7 @@ body {
     cursor: pointer;
 }
 
-.search_container {
+.result_container {
     display: grid;
         margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -61,6 +61,6 @@ body {
 }
 
 /* Add some padding inside the card container */
-.container {
+.container_search {
     padding: 2px 16px;
 }
